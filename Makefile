@@ -1,2 +1,2 @@
-run_s:
-	streamlit run ./src/app.py
+run: 
+	uvicorn src.commandor.main:app --host 0.0.0.0 --port 8000 --reload
